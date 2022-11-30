@@ -16,10 +16,11 @@ Ory Keto Permission Server is an open source implementation of "Zanzibar: Google
 ### Basic Concepts
 
 * Ory keto underlying datatype is called a "Relation Tuple". 
-+ A relationship tuple has following four entities:  
-     1. Namespace
-     2. Object
-     3. Relation
-     4. Subject
++ A relationship tuple has following four entities: 
+   
+     * **Namespace:**  To organise and configure relation tuples
+     * **Object:** identifier for some kind of application object
+     * **Relation:** type of relation (edit/view etc)
+     * **Subject:** a polymorphic datatype to denote a user/set of users/actors etc.
     
  
