@@ -4,4 +4,4 @@ This repo consists of Authz System files
 
 To run keto with postgresql:
 
-````docker compose -f docker-compose.yml up````
+````docker compose -f keto-docker/docker-compose.yml up````
