@@ -24,3 +24,24 @@ Ory Keto Permission Server is an open source implementation of "Zanzibar: Google
      * **Subject:** a polymorphic datatype to denote a user/set of users/actors etc.
     
  
+####  Resource tuple:     <p align="center"> namespace:object#relation@subject</p>
+   Subject can be subject_sets as well :  
+   ##### <p align= "center"> (namespace:object#relation) </p>
+
+### Example
+   ```
+   roles:moderator#member@jack  
+   roles:normalUser#member@Lily 
+   roles:normalUser#member@Sam 
+   roles:normalUser#(users:moderator#member).   //composite role. anyone who is a moderator is also a normal user.
+   
+   resources: files/reports#view@(roles:normalUser@member) 
+   resources: files/reports#edit@(roles#moderator#member) 
+  
+   ```
+  
+  Keto can now answer questions like:
+   * Does Jack have edit permission on files/reports?   **CHECK API :**  true
+   + Does Lily have edit permission on the files/reports? **CHECK API :** false
+   * Who all have view/edit permissions on files/reports. **Expand API :** \< returns the traversed tree containing subjects and subject sets \> 
+   
