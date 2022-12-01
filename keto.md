@@ -49,8 +49,7 @@ Ory Keto Permission Server is an open source implementation of "Zanzibar: Google
 ###### More Examples :  
    *  https://www.ory.sh/docs/keto/examples/olymp-file-sharing              
    * https://www.ory.sh/docs/keto/quickstart 
-      
-   
+   * Ory permission language: https://github.com/ory/keto/blob/master/docs/ory_permission_language_spec.md 
    
 ###### To get started with Ory keto in Java 
    - init a soringboot maven project with springweb dependency
