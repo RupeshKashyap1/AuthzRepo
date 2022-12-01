@@ -44,4 +44,23 @@ Ory Keto Permission Server is an open source implementation of "Zanzibar: Google
    * Does Jack have edit permission on files/reports?   **CHECK API :**  true
    + Does Lily have edit permission on the files/reports? **CHECK API :** false
    * Who all have view/edit permissions on files/reports. **Expand API :** \< returns the traversed tree containing subjects and subject sets \> 
+
+
+###### More Examples :  
+   *  https://www.ory.sh/docs/keto/examples/olymp-file-sharing              
+   * https://www.ory.sh/docs/keto/quickstart 
+      
+   
+   
+###### To get started with Ory keto in Java 
+   - init a soringboot maven project with springweb dependency
+   - add Keto dependency:  
+     ```       
+           <dependency>  
+                  <groupId>sh.ory.keto</groupId>  
+                  <artifactId>keto-client</artifactId>  
+                  <version>0.10.0-alpha.0</version>  
+            </dependency>
+      ```
+* Read the docs for available APIs and how to use them:  https://github.com/ory/keto-client-java
    
