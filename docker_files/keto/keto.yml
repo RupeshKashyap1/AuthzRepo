@@ -4,11 +4,7 @@ log:
   level: debug
 
 namespaces:
-  - id: 0
-    name: groups
-  - id: 1
-    name: roles
-
+  location: file://home/ory/keto_namespaces.ts
 serve:
   read:
     host: 0.0.0.0
