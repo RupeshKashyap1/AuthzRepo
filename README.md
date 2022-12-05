@@ -2,6 +2,6 @@
 
 This repo consists of Authz System files 
 
-To run keto with postgresql:
+To run keto & hydra with postgresql:
 
-````docker compose -f keto-docker/docker-compose.yml up````
+````docker compose -f docker_files/docker-compose.yml -f docker_files/docker-compose-hydra.yml up````
